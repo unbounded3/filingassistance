@@ -18,6 +18,8 @@
         <label for="sign_idcard">*身份证号:</label><br> <input type="text" id="sign_idcard" v-model="signUpForm.idcard"><br>
         <label for="sign_password">*密码:</label><br> <input type="text" id="sign_password" v-model="signUpForm.password"><br>
         <label for="confpassword">*确认密码:</label><br> <input type="text" id="confpassword" v-model="signUpForm.confPassWord"><br>
+        <label for="sign_mobile">手机号:</label><br> <input type="text" id="sign_mobile" v-model="signUpForm.mobile"><br>
+        <label for="sign_email">邮箱:</label><br> <input type="text" id="sign_email" v-model="signUpForm.email"><br>
         <button  @click="sign_up">注册</button>
       </div>
     </div>
@@ -40,6 +42,8 @@ export default {
         idcard: '',
         password:'',
         confPassWord:'',
+        mobile:'',
+        email:'',
       },
       isLogin:true,
       isSign:false,
